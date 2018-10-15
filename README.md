@@ -26,4 +26,4 @@ possible with a learning supplement that can potentially help build their litera
 psychosocial wellbeing.<br><br>
 The project seeks to supplement existing formal and non-formal education programmes and clinical 
 psychosocial support interventions for Syrian children with an engaging smartphone application (game) 
-which is primarily intended for household 
+which is primarily intended for household use.
