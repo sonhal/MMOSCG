@@ -1,5 +1,15 @@
 # MMOSCG
-Business Case
+
+
+## Description
+In this assignment, you will have team up in groups of ten, and solve a business case (below) that the TA 
+will issue. You will have to select a group leader and divide yourself into two teams. In the first week, you 
+will need a CSS designer team and a content developer team (to create the HTML and content of the 
+website). See OsloMet’s website for information on connecting to your student web server. In the 
+second week, you will have two production teams, one for accessibility and testing and the other in 
+charge of user experience. At the end of week two, all groups will briefly present their work to the class.
+
+## Business Case
 Your business has been invited by the Norwegian government to submit a proposal for a mobile app. 
 You’ve been tasked with the job of creating a website for the app. The details and background of the 
 invitation are as follows: 
