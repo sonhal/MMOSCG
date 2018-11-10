@@ -1,239 +1,160 @@
 
 body {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
-    display: grid;
-    grid-template-rows: 51px 500px auto auto auto auto 100px;
-    
-}
-
-a {text-decoration: none;}
-ul {
-    list-style-type: none;
-    float: right;
-}
-
-ul li {
-    display: inline;
-}
-
-ul li a {color: #fff; padding: 15px;}
-
-#logo-text {
-    padding: 15px;
-    margin-left: 15px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    display: inline-block;
-}
-
-#logo-image {
-    margin-left: 15px;
-    height: 51px;
-}
-
-#logo {
-    display: inline-grid;
-    grid-template-columns: 51px auto;
+    margin: 0;
 }
 
 header {
-    background-color: #41C7C7;
+    background-color: azure;
     display: grid;
-    grid-template-columns: 30% auto;
-}
-
-#hero {
-    background-image: url("../resources/skateboards_hero_dark.jpg");
-    background-size: cover;
-    height: 100%;
-    color: white;
-    display: grid;
-    grid-column: 1fr;
     justify-items: center;
-    align-items: center;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 1em;
+    background-image: url("../resources/children_in_syra_grey.png");
+    background-size: cover;
+    padding-bottom: 10em;
 }
 
-#hero h2 {
-    font-size: 2em;
+nav {
+    background-image: url("../resources/smartphone_trns.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30em;
+    width: 17em;
+    border-right: 1px solid black;
+    border-radius: 13%;
+    background-color: lightgrey;
+
 }
 
-#hero p {
-    font-size: 1.2em;
+nav:hover {
+    border: 0 2px 0 2px solid black;
+    background-color: white;
 }
 
-#content1 {
-    margin-top: 5px;
-    display: grid;
-    grid-template-columns: 30% auto;
-}
-
-#content2 {
-    display: grid;
-    padding: 2px;
-    grid-template-columns: 75% auto;
-    background-color:  	#E8E8E8;
-}
-
-#about {
-    background-color: #D0D0D0;
-    display: grid;
-    grid-template-columns: 20% auto;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-#contact {
-    display: grid;
-    grid-template-columns: 20% auto;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-#contact ul li {
+nav ul {
+    list-style: none;
     display: block;
+    margin-top: 40%;
+    width: 65%;
 }
-#contact ul li a {
-    color:black;
-    text-decoration: underline;
+
+nav ul li {
+    margin: 3px;
+    background-color: lightskyblue;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-style: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: aquamarine;
+}
+
+
+main {
+    display: grid;
+    grid-row-gap: 0.1em;
+}
+
+.text-box {
+    margin: 1em;
+}
+
+
+#problem {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    box-sizing: border-box;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-color: aquamarine;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+#held_smartphone {
+    width: 50%;
+}
+
+#solution {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    background-color: lightseagreen;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr)
+}
+
+#selfie-image {
+    grid-column: span 4;
+    margin: 2em;
+}
+
+#tech-text {
+    grid-column: span 8;
 }
 
 
 footer {
-    background-color: #41C7C7;
-    display: grid;
-    justify-items: center;
-    grid-column: 1fr;
-    text-align: center;
+    background-color: aquamarine;
+    width: 100%;
 }
 
+footer ul {
+    display: inline-block;
+}
 
-@media screen and (max-width: 700px) {
-    ul li a {padding: 10px;}
-
-    #content1 {
-        margin-top: 5px;
-        display: grid;
-        grid-template-columns: 100%;
+footer ul li {
+    text-decoration: none;
+    list-style: none;
+}
+@media only screen and (max-width: 1000px) {
+    #selfie-image {
+        grid-column: span 5;
+        margin: 1em;
     }
-
-    #content2 {
-        display: grid;
-        padding: 2px;
-        grid-template-columns: 100%;
-        background-color:  	#E8E8E8;
-    }
-
-    #about {
-        background-color: #D0D0D0;
-        display: grid;
-        grid-template-columns: 100%;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
+    #tech-text {
+        grid-column: span 7;
     }
     
-    #contact {
-        display: grid;
+}
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: lightblue;
+    }
+
+
+    #problem {
         grid-template-columns: 100%;
-        padding: 20px;
+        padding: 0;
         justify-content: center;
-        align-items: center;
+        justify-items: center;
     }
 
-    #logo-text {
-        display: none;
+    #solution {
+        grid-template-columns: 100%;
     }
+
+    #selfie-image {
+        grid-column: span 12;
+    }
+    #tech-text {
+        grid-column: span 12;
+    }
+
 }
-
-@media screen and (min-width: 1366px) {
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        display: grid;
-        grid-template-rows: 10% 20em auto auto auto auto 10%;
-        font-size: 1,5em;
-    }
-
-    #oslo_street {
-        width: 400px;
-    }
-
-    #oslo_hus {
-        width: 300px;
-    }
-
-    #logo-image {
-        height: 60px;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        display: grid;
-        grid-template-rows: 6% 25em auto auto auto auto 10%;
-        font-size: 1.6em;
-    }
-    #oslo_street {
-        width: 500px;
-    }
-
-    #oslo_hus {
-        width: 500px;
-    }
-
-    #logo-image {
-        height: 70px;
-    }
-}
-
-@media screen and (min-width: 2560px) {
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        display: grid;
-        grid-template-rows: 10% 30em auto auto auto auto 10%;
-        font-size: 2em;
-    }
-    #oslo_street {
-        width: 600px;
-    }
-    #oslo_hus {
-        width: 500px;
-    }
-
-    #logo-image {
-        height: 100px;
-    }
-}
-
-@media screen and (min-width: 2960px) {
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        display: grid;
-        grid-template-rows: 10% 30em auto auto auto auto 10%;
-        font-size: 3em;
-    }
-    #oslo_street {
-        width: 800px;
-    }
-    #oslo_hus {
-        width: 600px;
-    }
-    #logo-image {
-        height: 150px;
-    }
-}
-
-
-
-
-
-
